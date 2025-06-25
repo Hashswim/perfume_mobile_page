@@ -1,0 +1,261 @@
+.element {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.element .overlap-group-wrapper {
+  background-image: url(https://c.animaapp.com/AUxvzaXH/img/vector.svg);
+  background-size: 100% 100%;
+  width: 1000px;
+  height: 1936.17px;
+}
+
+.element .overlap-group {
+  position: relative;
+  height: 1936px;
+  background-image: url(https://c.animaapp.com/AUxvzaXH/img/background.svg);
+  background-size: 100% 100%;
+}
+
+.element .overlap {
+  position: absolute;
+  width: 1000px;
+  height: 1391px;
+  top: 0;
+  left: 0;
+  background-image: url(https://c.animaapp.com/AUxvzaXH/img/pop-background.svg);
+  background-size: 100% 100%;
+}
+
+.element .div {
+  position: absolute;
+  width: 946px;
+  height: 1170px;
+  top: 45px;
+  left: 24px;
+}
+
+.element .overlap-2 {
+  position: absolute;
+  width: 946px;
+  height: 1109px;
+  top: 62px;
+  left: 0;
+}
+
+.element .background-image {
+  position: absolute;
+  width: 741px;
+  height: 778px;
+  top: 317px;
+  left: 91px;
+}
+
+.element .sub-title {
+  position: absolute;
+  top: 71px;
+  left: 110px;
+  font-family: "NanumSquare-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #f5fbff;
+  font-size: 125.9px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .title {
+  position: absolute;
+  top: 0;
+  left: 235px;
+  font-family: "NanumSquare-Regular", Helvetica;
+  font-weight: 400;
+  color: #f5fbff;
+  font-size: 64.1px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .start-icon-small {
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  top: 204px;
+  left: 16px;
+}
+
+.element .start-icon-large {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  top: 351px;
+  left: 0;
+}
+
+.element .image {
+  position: absolute;
+  width: 610px;
+  height: 610px;
+  top: 390px;
+  left: 171px;
+}
+
+.element .hash {
+  position: absolute;
+  width: 211px;
+  top: 1063px;
+  left: 735px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 44.3px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .text-wrapper {
+  font-weight: 700;
+}
+
+.element .span {
+  font-family: "NanumSquare-Regular", Helvetica;
+}
+
+.element .share {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  top: 700px;
+  left: 204px;
+}
+
+.element .img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 866px;
+}
+
+.element .p {
+  position: absolute;
+  width: 211px;
+  top: 1236px;
+  left: 759px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 44.3px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .hash-2 {
+  position: absolute;
+  width: 211px;
+  top: 1303px;
+  left: 759px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 44.3px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .top-note-group {
+  display: flex;
+  flex-direction: column;
+  width: 187px;
+  align-items: center;
+  gap: 44px;
+  position: absolute;
+  top: 1533px;
+  left: 80px;
+}
+
+.element .top-note-title {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 700;
+  color: #e3effa;
+  font-size: 44.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element .top-note-text {
+  position: relative;
+  align-self: stretch;
+  font-family: "NanumSquare-Regular", Helvetica;
+  font-weight: 400;
+  color: #e3effa;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element .middle-note-group {
+  position: absolute;
+  width: 184px;
+  height: 162px;
+  top: 1529px;
+  left: 410px;
+}
+
+.element .middle-note-title {
+  position: absolute;
+  top: 0;
+  left: 21px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 700;
+  color: #e3effa;
+  font-size: 44.3px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-2 {
+  position: absolute;
+  top: 94px;
+  left: 0;
+  font-family: "NanumSquare-Regular", Helvetica;
+  font-weight: 400;
+  color: #e3effa;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element .base-note-group {
+  position: absolute;
+  width: 136px;
+  height: 162px;
+  top: 1525px;
+  left: 733px;
+}
+
+.element .base-note-title {
+  top: 0;
+  left: 16px;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 44.3px;
+  position: absolute;
+  color: #e3effa;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
