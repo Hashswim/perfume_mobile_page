@@ -7,7 +7,7 @@
 }
 
 .element .overlap-group-wrapper {
-  background-image: url(https://c.animaapp.com/AUxvzaXH/img/vector.svg);
+  background-color: black;
   background-size: 100% 100%;
   width: 1000px;
   height: 1936.17px;
@@ -16,7 +16,7 @@
 .element .overlap-group {
   position: relative;
   height: 1936px;
-  background-image: url(https://c.animaapp.com/AUxvzaXH/img/background.svg);
+  background-color: #132f5a;
   background-size: 100% 100%;
 }
 
@@ -26,7 +26,7 @@
   height: 1391px;
   top: 0;
   left: 0;
-  background-image: url(https://c.animaapp.com/AUxvzaXH/img/pop-background.svg);
+  background-color: #3559A6;
   background-size: 100% 100%;
 }
 
