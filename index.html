@@ -39,5 +39,142 @@
         </div>
       </div>
     </div>
+    <script>
+      // 인덱스별 데이터
+      const data = [
+        { // 인덱스 1
+          subTitle: "Lemonula",
+          title: "당신에게 어울리는",
+          hash: "에너지",
+          hash1: "상큼함",
+          topNote: "Lemon",
+          middleNote: "Rose",
+          baseNote: "Amber",
+          image: "./img/lemonula.png",
+              colors: {
+                overlapGroup: "#eab308",
+                overlap: "#fffbe6"
+              }
+        },
+        { // 인덱스 2
+          subTitle: "Flolarin",
+          title: "당신에게 어울리는",
+          hash: "달콤함",
+          hash1: "상큼함",
+          topNote: "Cucumber",
+          middleNote: "Lavender",
+          baseNote: "Cedarwood",
+          image: "./img/flolarin.png",    
+          colors: {
+            overlapGroup: "#b8721d",
+            overlap: "#f7d08a"
+          }
+        },
+        { // 인덱스 3
+          subTitle: "Essentria",
+          title: "당신에게 어울리는",
+          hash: "플로럴",
+          hash1: "로맨틱",
+          topNote: "Raspberry",
+          middleNote: "Rose",
+          baseNote: "Musk",
+          image: "essentria",    
+          colors: {
+            overlapGroup: "#7c3fa6",
+            overlap: "#d6b3f7"
+          }
+        },
+                { // 인덱스 4
+          subTitle: "Lumina",
+          title: "당신에게 어울리는",
+          hash: "신비적",
+          hash1: "세련된",
+          topNote: "Bergamot",
+          middleNote: "Jasmine",
+          baseNote: "Amber",
+          image: "./img/Lumina.png",   
+          colors: {
+            overlapGroup: "#145c69",
+            overlap: "#b97a2b"
+          }
+        },
+                { // 인덱스 5
+          subTitle: "Cool Water",
+          title: "당신에게 어울리는",
+          hash: "시원함",
+          hash1: "남성적",
+          topNote: "Bergamot",
+          middleNote: "Geranium",
+          baseNote: "Vetiver",
+          image: "./img/coolwater.png",    
+          colors: {
+            overlapGroup: "#1a3a6b",
+            overlap: "#4a7dc7"
+          }
+        },
+                { // 인덱스 6
+          subTitle: "Maruit",
+          title: "당신에게 어울리는",
+          hash: "도시적",
+          hash1: "청량감",
+          topNote: "Mint",
+          middleNote: "Lavender",
+          baseNote: "Sandalwood",
+          image: "./img/maruit.png",    
+          colors: {
+            overlapGroup: "#23446d",
+            overlap: "#6bb0d6"
+          }
+        },
+                { // 인덱스 7
+          subTitle: "Nectarua",
+          title: "당신에게 어울리는",
+          hash: "관능적",
+          hash1: "시원함",
+          topNote: "Mandarin",
+          middleNote: "Rose",
+          baseNote: "Amber",
+          image: "./img/nectarua.png",    
+          colors: {
+            overlapGroup: "#a86e1a",
+            overlap: "#ffd07b"
+          }
+        },
+        { // 인덱스 8
+          subTitle: "Croloys",
+          title: "당신에게 어울리는",
+          hash: "관능적",
+          hash1: "시원함",
+          topNote: "Marine",
+          middleNote: "Sage",
+          baseNote: "Musk",
+          image: "./img/croloys.png",    
+          colors: {
+            overlapGroup: "#132f5a",
+            overlap: "#3559A6"
+          }
+        },
+      ];
+
+      // URL 파라미터에서 인덱스 읽기 (예: ?idx=1)
+      const params = new URLSearchParams(window.location.search);
+      let idx = parseInt(params.get('idx')) || 1;
+      idx = Math.max(1, Math.min(data.length, idx));
+
+      // 해당 인덱스 데이터 가져오기
+      const item = data[idx - 1] || data[0];
+
+      // 각 요소에 값 적용
+      document.querySelector('.sub-title').textContent = item.subTitle;
+      document.querySelector('.title').textContent = item.title;
+      document.querySelector('.hash .span').textContent = item.hash;
+      document.querySelector('.p .span').textContent = item.hash1;
+      document.querySelector('.top-note-text').textContent = item.topNote;
+      document.querySelector('.middle-note-group .text-wrapper-2').textContent = item.middleNote;
+      document.querySelector('.base-note-group .text-wrapper-2').textContent = item.baseNote;
+      document.querySelector('.image').src = item.image;
+      document.querySelector('.overlap-group').style.backgroundColor = item.colors.overlapGroup;
+      document.querySelector('.overlap').style.backgroundColor = item.colors.overlap;
+    </script>
   </body>
 </html>

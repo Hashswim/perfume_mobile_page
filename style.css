@@ -175,6 +175,7 @@
   flex-direction: column;
   width: 60px;
   align-items: center;
+  text-align: center;
   gap: 14px;
   position: absolute;
   top: 491px;
@@ -182,6 +183,7 @@
 }
 
 .element .top-note-title {
+  display: inline-block;
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -195,6 +197,7 @@
 }
 
 .element .top-note-text {
+  display: inline-block;
   position: relative;
   align-self: stretch;
   font-family: "NanumSquare-Regular", Helvetica;
@@ -206,6 +209,7 @@
 }
 
 .element .middle-note-group {
+  text-align: center;
   position: absolute;
   width: 59px;
   height: 52px;
@@ -214,6 +218,7 @@
 }
 
 .element .middle-note-title {
+  display: inline-block;
   position: absolute;
   top: 0;
   left: 7px;
@@ -227,6 +232,8 @@
 }
 
 .element .text-wrapper-2 {
+  display: inline-block;
+  text-align: center;
   position: absolute;
   top: 30px;
   left: 0;
