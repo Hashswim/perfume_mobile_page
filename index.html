@@ -19,22 +19,24 @@
                 <img class="start-icon-large" src="https://c.animaapp.com/AUxvzaXH/img/start-icon-large.svg" />
                 <img class="image" src="https://c.animaapp.com/AUxvzaXH/img/------.png" />
                 <p class="hash"><span class="text-wrapper">#</span> <span class="span"> 관능적</span></p>
+                <p class="p"><span class="text-wrapper">#</span> <span class="span"> 시원함</span></p>
               </div>
               <img class="img" src="https://c.animaapp.com/AUxvzaXH/img/share.svg" />
             </div>
-            <p class="p"><span class="text-wrapper">#</span> <span class="span"> 시원함</span></p>
           </div>
-          <div class="top-note-group">
-            <div class="top-note-title">Top</div>
-            <div class="top-note-text">Lemon</div>
-          </div>
-          <div class="middle-note-group">
-            <div class="middle-note-title">Middle</div>
-            <div class="text-wrapper-2">Middle</div>
-          </div>
-          <div class="base-note-group">
-            <div class="base-note-title">Base</div>
-            <div class="text-wrapper-2">Base</div>
+          <div class="notes-container">
+            <div class="note-group top-note-group">
+              <div class="note-title">Top</div>
+              <div class="note-text">Lemon</div>
+            </div>
+            <div class="note-group middle-note-group">
+              <div class="note-title">Middle</div>
+              <div class="note-text">Middle</div>
+            </div>
+            <div class="note-group base-note-group">
+              <div class="note-title">Base</div>
+              <div class="note-text">Base</div>
+            </div>
           </div>
         </div>
       </div>
@@ -52,8 +54,8 @@
           baseNote: "Amber",
           image: "./img/lemonula.png",
               colors: {
-                overlapGroup: "#eab308",
-                overlap: "#fffbe6"
+                overlapGroup: "#b28a00",
+                overlap: "#e6c74c"
               }
         },
         { // 인덱스 2
@@ -78,7 +80,7 @@
           topNote: "Raspberry",
           middleNote: "Rose",
           baseNote: "Musk",
-          image: "essentria",    
+          image: "./img/essentria.png",    
           colors: {
             overlapGroup: "#7c3fa6",
             overlap: "#d6b3f7"
@@ -169,9 +171,9 @@
       document.querySelector('.title').textContent = item.title;
       document.querySelector('.hash .span').textContent = item.hash;
       document.querySelector('.p .span').textContent = item.hash1;
-      document.querySelector('.top-note-text').textContent = item.topNote;
-      document.querySelector('.middle-note-group .text-wrapper-2').textContent = item.middleNote;
-      document.querySelector('.base-note-group .text-wrapper-2').textContent = item.baseNote;
+      document.querySelector('.top-note-group .note-text').textContent = item.topNote;
+      document.querySelector('.middle-note-group .note-text').textContent = item.middleNote;
+      document.querySelector('.base-note-group .note-text').textContent = item.baseNote;
       document.querySelector('.image').src = item.image;
       document.querySelector('.overlap-group').style.backgroundColor = item.colors.overlapGroup;
       document.querySelector('.overlap').style.backgroundColor = item.colors.overlap;

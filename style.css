@@ -10,12 +10,13 @@
   background-color: black;
   background-size: 100% 100%;
   width: 320px;
-  height: 620px; 
+  height: 620px;
+  position: relative;
 }
 
 .element .overlap-group {
   position: relative;
-  height: 620px; /* 1936px → 620px */
+  height: 620px;
   background-color: #132f5a;
   background-size: 100% 100%;
 }
@@ -23,7 +24,7 @@
 .element .overlap {
   position: absolute;
   width: 320px;
-  height: 445px; 
+  height: 445px;
   top: 0;
   left: 0;
   background-color: #3559A6;
@@ -32,7 +33,7 @@
 
 .element .div {
   position: absolute;
-  width: 303px; 
+  width: 303px;
   height: 374px;
   top: 14px;
   left: 8px;
@@ -51,26 +52,28 @@
   width: 237px;
   height: 249px;
   top: 101px;
-  left: 29px; 
+  left: 29px;
 }
 
 .element .sub-title {
   position: absolute;
   top: 23px;
-  left: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "NanumSquare-ExtraBold", Helvetica;
   font-weight: 800;
   color: #f5fbff;
-  font-size: 40px; 
+  font-size: 40px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  text-align: center;
 }
 
 .element .title {
   position: absolute;
   top: 0;
-  left: 75px; 
+  left: 75px;
   font-family: "NanumSquare-Regular", Helvetica;
   font-weight: 400;
   color: #f5fbff;
@@ -83,39 +86,47 @@
 .element .start-icon-small {
   position: absolute;
   width: 48px;
-  height: 48px; 
-  top: 65px; 
+  height: 48px;
+  top: 65px;
   left: 5px;
 }
 
 .element .start-icon-large {
   position: absolute;
-  width: 28px; 
-  height: 28px; 
+  width: 28px;
+  height: 28px;
   top: 112px;
   left: 0;
 }
 
 .element .image {
   position: absolute;
-  width: 195px; 
-  height: 195px; 
+  width: 195px;
+  height: 195px;
   top: 125px;
-  left: 55px; 
+  left: 55px;
 }
 
-.element .hash {
+.element .hash,
+.element .p {
   position: absolute;
   width: 68px;
-  top: 340px;
-  left: 235px; 
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 14px; 
+  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  text-align: center;
+}
+.element .hash {
+  top: 340px;
+  left: 235px;
+}
+.element .p {
+  top: 360px;
+  left: 235px;
 }
 
 .element .text-wrapper {
@@ -129,140 +140,56 @@
 .element .share {
   position: absolute;
   width: 31px;
-  height: 31px; 
+  height: 31px;
   top: 224px;
   left: 65px;
 }
 
 .element .img {
   position: absolute;
-  width: 26px; 
-  height: 26px; 
+  width: 26px;
+  height: 26px;
   top: 0;
   left: 277px;
 }
-
-.element .p {
+/* 노트 그룹 컨테이너 */
+.notes-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
   position: absolute;
-  width: 68px;
-  top: 396px;
-  left: 243px;
-  font-family: "NanumSquare-Bold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  top: 490px;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
 }
 
-.element .hash-2 {
-  position: absolute;
-  width: 68px;
-  top: 417px;
-  left: 243px;
-  font-family: "NanumSquare-Bold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.element .top-note-group {
+/* 공통 노트 그룹 스타일 */
+.note-group {
   display: flex;
   flex-direction: column;
-  width: 60px;
   align-items: center;
   text-align: center;
-  gap: 14px;
-  position: absolute;
-  top: 491px;
-  left: 26px;
+  gap: 10px;
+  width: 30%; /* 3개 그룹이 가로 정렬되도록 */
 }
 
-.element .top-note-title {
-  display: inline-block;
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
+/* 타이틀 공통 스타일 */
+.note-title {
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 700;
   color: #e3effa;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.element .top-note-text {
-  display: inline-block;
-  position: relative;
-  align-self: stretch;
+/* 텍스트 공통 스타일 */
+.note-text {
   font-family: "NanumSquare-Regular", Helvetica;
   font-weight: 400;
   color: #e3effa;
   font-size: 19px;
   letter-spacing: 0;
   line-height: normal;
-}
-
-.element .middle-note-group {
-  text-align: center;
-  position: absolute;
-  width: 59px;
-  height: 52px;
-  top: 489px;
-  left: 131px;
-}
-
-.element .middle-note-title {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 7px;
-  font-family: "NanumSquare-Bold", Helvetica;
-  font-weight: 700;
-  color: #e3effa;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.element .text-wrapper-2 {
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  font-family: "NanumSquare-Regular", Helvetica;
-  font-weight: 400;
-  color: #e3effa;
-  font-size: 19px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.element .base-note-group {
-  position: absolute;
-  width: 44px;
-  height: 52px; 
-  top: 488px;
-  left: 235px;
-}
-
-.element .base-note-title {
-  top: 0;
-  left: 5px;
-  font-family: "NanumSquare-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 14px;
-  position: absolute;
-  color: #e3effa;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
 }
