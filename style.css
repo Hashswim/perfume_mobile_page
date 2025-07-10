@@ -69,7 +69,7 @@ img, .image {
 
 .element .sub-title {
   position: absolute;
-  top: 8%;
+  top: 11%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "NanumSquare-ExtraBold", Helvetica;
@@ -84,7 +84,7 @@ img, .image {
 
 .element .title {
   position: absolute;
-  top: 15%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "NanumSquare-Regular", Helvetica;
