@@ -84,7 +84,7 @@ img, .image {
 
 .element .title {
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "NanumSquare-Regular", Helvetica;
@@ -119,7 +119,7 @@ img, .image {
   height: 80vw;
   max-width: 300px;
   max-height: 300px;
-  top: 35%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   object-fit: contain;
