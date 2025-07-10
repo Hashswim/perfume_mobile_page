@@ -141,13 +141,13 @@ img, .image {
 }
 .element .hash {
   position: absolute;
-  top: 70%;
-  left: 70%;
+  top: 68%;
+  left: 85%;
   width: 18%;
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
@@ -155,13 +155,13 @@ img, .image {
 }
 .element .p {
   position: absolute;
-  top: 72%;
-  left: 70%;
+  top: 70%;
+  left: 85%;
   width: 18%;
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
