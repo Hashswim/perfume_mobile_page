@@ -139,10 +139,11 @@ img, .image {
   height: 80vw;
   max-width: 300px;
   max-height: 300px;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   object-fit: contain;
+  margin: 0 auto;
 }
 
 .element .hash,
@@ -159,12 +160,32 @@ img, .image {
   text-align: center;
 }
 .element .hash {
-  top: 65%;
+  position: absolute;
+  top: 70%;
   left: 70%;
+  width: 18%;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
 }
 .element .p {
-  top: 73%;
+  position: absolute;
+  top: 74%;
   left: 70%;
+  width: 18%;
+  font-family: "NanumSquare-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .element .text-wrapper {
