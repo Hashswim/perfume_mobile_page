@@ -142,7 +142,7 @@ img, .image {
 .element .hash {
   position: absolute;
   top: 68%;
-  left: 85%;
+  left: 81%;
   width: 18%;
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 400;
@@ -156,7 +156,7 @@ img, .image {
 .element .p {
   position: absolute;
   top: 70%;
-  left: 85%;
+  left: 81%;
   width: 18%;
   font-family: "NanumSquare-Bold", Helvetica;
   font-weight: 400;
@@ -166,6 +166,10 @@ img, .image {
   line-height: normal;
   white-space: nowrap;
   text-align: center;
+}
+
+.element .hash .span, .element .p .span {
+  margin-left: 2vw;
 }
 
 .element .text-wrapper {
